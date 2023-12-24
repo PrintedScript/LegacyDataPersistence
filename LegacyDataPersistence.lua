@@ -115,7 +115,7 @@ function LegacyDataPersistence:GetPlayer( player )
 	
 	local function LoadKeyFromMemory(key)
 		AssertDataReady()
-		return _G.LegacyDataPersistence[PlayerKey]
+		return _G.LegacyDataPersistence[PlayerKey][key]
 	end	
 	
 	local function AssertValueType(value, expectedType)
